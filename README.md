@@ -1,6 +1,5 @@
 # Bank Marketing: Term-Deposit Subscription Predictor
 
-An end-to-end traditional ML system. It predicts whether a bank customer will subscribe to a term deposit **before** the bank calls them, so the call centre can prioritise who to call.
 
 **Dataset:** UCI Bank Marketing (`bank-additional-full.csv`). 41,188 calls, 20 input columns, 11.3% "yes".
 
