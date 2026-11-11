@@ -1,0 +1,46 @@
+{
+  "model": "random forest",
+  "threshold_selection": {
+    "profit_best_threshold": 0.1,
+    "f1_best_threshold": 0.21,
+    "theoretical_threshold_cost_over_value": 0.1,
+    "oof_pr_auc": 0.4645914750328329
+  },
+  "test": {
+    "threshold": 0.1,
+    "pr_auc": 0.49487371365973254,
+    "roc_auc": 0.8141953403686087,
+    "accuracy": 0.833778533268577,
+    "precision": 0.369449378330373,
+    "recall": 0.6724137931034483,
+    "f1": 0.476881925869316,
+    "confusion": {
+      "TP": 624,
+      "FP": 1065,
+      "FN": 304,
+      "TN": 6243
+    },
+    "profit_eur": 22755.0,
+    "profit_if_call_everyone_eur": 5220.0,
+    "calls_made": 1689,
+    "calls_if_everyone": 8236
+  },
+  "permutation_importance": {
+    "nr.employed": 0.06708029602086943,
+    "euribor3m": 0.032341123285228354,
+    "emp.var.rate": 0.02263288023443024,
+    "contact": 0.021628125257625065,
+    "month": 0.020980655353154264,
+    "pdays": 0.014586781128289539,
+    "day_of_week": 0.013818564489735152,
+    "poutcome": 0.013191268987675553,
+    "cons.price.idx": 0.01192742242772652,
+    "cons.conf.idx": 0.011492218486594452
+  },
+  "temporal_check": {
+    "past_yes_rate": 0.06375227686703097,
+    "future_yes_rate": 0.3082807187955318,
+    "future_pr_auc": 0.5066184871431852,
+    "future_roc_auc": 0.7356016720172852
+  }
+}

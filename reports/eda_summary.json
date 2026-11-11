@@ -1,0 +1,46 @@
+{
+  "train_rows": 32940,
+  "yes_rate": 0.1127,
+  "dummy_accuracy_if_always_no": 0.8873,
+  "unknown_counts": {
+    "job": 267,
+    "marital": 68,
+    "education": 1389,
+    "default": 6857,
+    "housing": 779,
+    "loan": 779
+  },
+  "pdays_999_share": 0.9634,
+  "default_yes_count": 2,
+  "yes_rate_by_duration_quintile": {
+    "0-89s": 0.005,
+    "90-146s": 0.033,
+    "147-220s": 0.075,
+    "221-368s": 0.12,
+    "369-4199s": 0.331
+  },
+  "yes_rate_by_age_band": {
+    "<25": 0.215,
+    "25-34": 0.115,
+    "35-49": 0.084,
+    "50-59": 0.11,
+    "60+": 0.451
+  },
+  "yes_rate_by_poutcome": {
+    "nonexistent": 0.088,
+    "failure": 0.14,
+    "success": 0.66
+  },
+  "yes_rate_by_month": {
+    "mar": 0.498,
+    "apr": 0.204,
+    "may": 0.064,
+    "jun": 0.104,
+    "jul": 0.092,
+    "aug": 0.108,
+    "sep": 0.44,
+    "oct": 0.435,
+    "nov": 0.102,
+    "dec": 0.503
+  }
+}

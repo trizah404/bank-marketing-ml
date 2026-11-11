@@ -1,0 +1,73 @@
+{
+  "leakage_experiment": {
+    "pr_auc_with_duration": 0.5983551997249075,
+    "pr_auc_without_duration": 0.4491137545299321
+  },
+  "baseline_comparison": {
+    "dummy (always 'no')": {
+      "cv_pr_auc_mean": 0.11265938069216756,
+      "cv_pr_auc_std": 6.071645415908211e-05,
+      "train_pr_auc_mean": 0.11265938069216756,
+      "cv_roc_auc_mean": 0.5,
+      "cv_f1_at_0.5_mean": 0.0,
+      "seconds": 2.2
+    },
+    "logistic regression": {
+      "cv_pr_auc_mean": 0.4491137545299321,
+      "cv_pr_auc_std": 0.013105649235421634,
+      "train_pr_auc_mean": 0.4577825008401109,
+      "cv_roc_auc_mean": 0.7891208603253071,
+      "cv_f1_at_0.5_mean": 0.3462517736341464,
+      "seconds": 4.1
+    },
+    "decision tree": {
+      "cv_pr_auc_mean": 0.17944446933000574,
+      "cv_pr_auc_std": 0.004395599846912242,
+      "train_pr_auc_mean": 0.998897204760033,
+      "cv_roc_auc_mean": 0.6215970175089897,
+      "cv_f1_at_0.5_mean": 0.3198574465376366,
+      "seconds": 4.2
+    },
+    "random forest": {
+      "cv_pr_auc_mean": 0.4645268621965336,
+      "cv_pr_auc_std": 0.013226518086145871,
+      "train_pr_auc_mean": 0.6943637727894915,
+      "cv_roc_auc_mean": 0.7936515846010018,
+      "cv_f1_at_0.5_mean": 0.36307648696068207,
+      "seconds": 20.3
+    },
+    "gradient boosting": {
+      "cv_pr_auc_mean": 0.46331831953837577,
+      "cv_pr_auc_std": 0.017742897404109097,
+      "train_pr_auc_mean": 0.5586523838757023,
+      "cv_roc_auc_mean": 0.8004408083750276,
+      "cv_f1_at_0.5_mean": 0.3710544915110544,
+      "seconds": 5.9
+    }
+  },
+  "tuned": {
+    "random forest": {
+      "best_params": {
+        "model__max_depth": 12,
+        "model__max_features": 0.3,
+        "model__min_samples_leaf": 19
+      },
+      "cv_pr_auc_mean": 0.4684992098877784,
+      "cv_pr_auc_std": 0.01607716008265563,
+      "train_pr_auc_mean": 0.5540437589520772
+    },
+    "gradient boosting": {
+      "best_params": {
+        "model__l2_regularization": 4.337920697490942,
+        "model__learning_rate": 0.024112898115291985,
+        "model__max_iter": 459,
+        "model__max_leaf_nodes": 11,
+        "model__min_samples_leaf": 21
+      },
+      "cv_pr_auc_mean": 0.46687732083634065,
+      "cv_pr_auc_std": 0.015367795322019937,
+      "train_pr_auc_mean": 0.49792215336962603
+    }
+  },
+  "selected_model": "random forest"
+}

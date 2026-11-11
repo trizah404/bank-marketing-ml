@@ -1,0 +1,10 @@
+.venv/
+data/
+reports/
+test/
+tests/
+__pycache__/
+.pytest_cache/
+models/selected_unthresholded.joblib
+*.txt
+!requirements-api.txt
